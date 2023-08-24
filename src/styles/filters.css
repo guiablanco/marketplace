@@ -1,0 +1,25 @@
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.filters > div {
+    display: flex;
+    gap: 1rem;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+label {
+    color: aliceblue;
+}
+
+span {
+    color: aliceblue;
+}
+
