@@ -1,6 +1,7 @@
 import { FiltersProvider } from '@/context/filters'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { CartProvider } from '@/context/cart'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,9 +14,11 @@ export default function RootLayout({ children }) {
   return (
     
     <html lang="en">
-      <FiltersProvider>
-        <body className={inter.className}>{children}</body>
-      </FiltersProvider>
+      <CartProvider>
+        <FiltersProvider>
+          <body className={inter.className}>{children}</body>
+        </FiltersProvider>
+      </CartProvider>
     </html>
   )
 }
