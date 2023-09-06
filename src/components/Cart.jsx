@@ -18,10 +18,17 @@ function CartItem ({thumbnail, price, title, quantity, addToCart}) {
             </div>
             <footer>
                 <small>
-                    Qty:{quantity}
+                    Unidades:{quantity}
                 </small>
                 <button onClick={addToCart}>+</button>
             </footer>
+            {
+                    quantity > 1 
+                    ? 
+                    <small>Subtotal: ${price*quantity}</small>
+                    :
+                    null
+                }
         </li>
     )
 }
