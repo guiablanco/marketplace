@@ -16,7 +16,7 @@ const Footer = () => {
                 JSON.stringify(cart, null, 2)
             } */}
 
-            <h4>Prueba Técnica de React ⚛ - <span>@guiablanco</span></h4>
+            <h4>Desarrollado con React ⚛ y NextJs - <span>@guiablanco</span></h4>
             <h5>Shopping Cart con useContext & useReducer</h5>
             
         </footer>

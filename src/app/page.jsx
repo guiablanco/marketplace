@@ -2,7 +2,6 @@
 
 import { Products } from "@/components/Products";
 import { products as initialProducts } from '../mocks/products.json';
-import { useState } from "react";
 
 //Components
 import Header from "@/components/Header";
