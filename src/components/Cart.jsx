@@ -75,9 +75,9 @@ const Cart = () => {
                     :
                     null
                 }
-                <button>
-                    Pagar
-                </button>
+                <p>
+                    Final del carrito
+                </p>
             </aside>
         </>
     );
