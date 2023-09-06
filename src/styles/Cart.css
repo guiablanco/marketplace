@@ -7,6 +7,7 @@
     top: 0px;
     width: 200px;
     color: aliceblue;
+    overflow-y: auto;
 }
 
 .cart img {
@@ -55,4 +56,10 @@
 .cart-button ~ input:checked ~ .cart {
     height: 100%;
     display: block;
+}
+
+.clear-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

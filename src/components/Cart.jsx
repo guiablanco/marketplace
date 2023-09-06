@@ -39,6 +39,11 @@ const Cart = () => {
 
     const cartCheckboxId = useId();
     const {cart, clearCart, addToCart} = useCart();
+    const total = cart.reduce((accumulator, product) => {
+        const { price, quantity } = product;
+        return accumulator + price * quantity;
+      }, 0);
+
 
     return (
         <>
@@ -60,8 +65,18 @@ const Cart = () => {
                     }
                 </ul>
 
-                <button onClick={clearCart}>
+                <button className="clear-button" onClick={clearCart}>
                     <ClearCartIcon/>
+                    <small>Vacía carrito</small>
+                </button>
+                { total>0 
+                    ?
+                    <p>Total: ${total}</p>
+                    :
+                    null
+                }
+                <button>
+                    Pagar
                 </button>
             </aside>
         </>
